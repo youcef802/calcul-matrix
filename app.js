@@ -60,7 +60,7 @@ function mulMatrices(A, B) {
   for (let i=0;i<rA;i++){
     for (let j=0;j<cB;j++){
       let sum = 0;
-      for (let k=0;k<cA;k++){ sum += A[i][k] * B[k][j]; }
+      for (let k=0;k<cA;k++){   }
       R[i][j] = sum;
     }
   }
