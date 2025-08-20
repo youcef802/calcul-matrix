@@ -125,3 +125,9 @@ $("btnSelfTest").addEventListener("click", ()=>{
   console.log(tests.join(" | "));
   errEl.textContent = "Check console (F12) for test results.";
 });
+$("btnSamples").addEventListener("click", ()=>{
+  rowsEl.value = 2; colsEl.value = 2;
+  AEl.value = "1,2; 3,4";
+  BEl.value = "5,6; 7,8";
+  resEl.textContent = "—"; errEl.textContent = "";
+});
