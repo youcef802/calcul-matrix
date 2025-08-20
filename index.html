@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Calcul Matrix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Calcul Matrix</h1>
+
+    <section class="dims">
+      <div>
+        <label>Rows:</label>
+        <input id="rows" type="number" min="1" value="2" />
+      </div>
+      <div>
+        <label>Cols:</label>
+        <input id="cols" type="number" min="1" value="2" />
+      </div>
+      <button id="applyDims">Apply Dimensions</button>
+    </section>
+
+    <section class="grids">
+      <div>
+        <h3>Matrix A</h3>
+        <textarea id="matrixA" placeholder="مثال: 1,2; 3,4"></textarea>
+      </div>
+      <div>
+        <h3>Matrix B</h3>
+        <textarea id="matrixB" placeholder="مثال: 5,6; 7,8"></textarea>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="btnAdd">A + B</button>
+      <button id="btnSub">A - B</button>
+      <button id="btnMul">A × B</button>
+      <button id="btnClear">Clear</button>
+      <button id="btnSelfTest">Run Self Test</button>
+    </section>
+
+    <section>
+      <h3>Result</h3>
+      <pre id="result">—</pre>
+      <p id="error" class="error"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
