@@ -92,7 +92,9 @@ function run(op){
     if (op==='add') R = addMatrices(A,B);
     else if (op==='sub') R = subMatrices(A,B);
     else if (op==='mul') R = mulMatrices(A,B);
-    resEl.textContent = formatMatrix(R);
+   resEl.textContent = formatMatrix(R);
+errEl.textContent = ""; // ensure error cleared on success
+
   }catch(e){
     resEl.textContent = "—";
     errEl.textContent = e.message;
